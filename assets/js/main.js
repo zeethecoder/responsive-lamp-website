@@ -33,9 +33,15 @@ navLink.forEach(item => item.addEventListener('click', linkAction))
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
+    const toggle = document.getElementById('nav-toggle') 
+    const logo = document.getElementById('nav-logo')
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
     this.scrollY >= 50 ? header.classList.add('bg-header') 
                        : header.classList.remove('bg-header')
+    this.scrollY >= 50 ? toggle.classList.add('bg-text') 
+                       : toggle.classList.remove('bg-text')
+    this.scrollY >= 50 ? logo.classList.add('bg-text') 
+                       : logo.classList.remove('bg-text')
 }
 window.addEventListener('scroll', scrollHeader)
 
