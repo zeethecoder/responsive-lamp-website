@@ -73,8 +73,7 @@ Why Choose Us
 
 .choose__description
 Our products have won numerous awards 
-and we can guarantee the unlimited 
-quality of our products.
+
 
 .choose__faq-title .choose__faq-description
 Frequently New Design
