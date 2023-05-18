@@ -808,7 +808,7 @@ p.choose__description {
   transition: box-shadow .4s;
 }
 
-.products__card{
+.products__card {
   box-shadow: 0 12px 16px hsla(0, 0%, 0%, .1);
 }
 
@@ -817,10 +817,12 @@ p.products__description {
   text-align: center;
 
 }
+
 h3.products__price {
   position: relative;
   top: 1vh;
 }
+
 .products__content {
   margin-top: 5vh;
   margin: 0 auto;
@@ -883,17 +885,17 @@ article.products__card {
 /*=============== JOIN ===============*/
 
 
-.join__container{
+.join__container {
   padding-top: 2.5rem;
 }
 
-.join__bg{
+.join__bg {
   row-gap: 0;
   background-color: var(--container-color);
   padding: 0 1.5rem 3.5rem 1.5rem;
 }
 
-.join__blob{
+.join__blob {
   position: relative;
   width: 220px;
   height: 320px;
@@ -906,13 +908,13 @@ article.products__card {
   z-index: 2;
 }
 
-.join__image{
+.join__image {
   position: relative;
   justify-self: center;
   transform: translateY(-3.5rem);
 }
 
-.join__shadow{
+.join__shadow {
   position: relative;
   width: 210px;
   height: 30px;
@@ -923,13 +925,13 @@ article.products__card {
   top: -19px;
 }
 
-.join__img{
+.join__img {
   display: block;
   height: 210px;
   margin: 0 auto;
 }
 
-.join__blob-title{
+.join__blob-title {
   text-align: center;
   font-size: 3.5rem;
   letter-spacing: 2px;
@@ -937,17 +939,17 @@ article.products__card {
   font-weight: var(--font-medium);
 }
 
-.join__data{
+.join__data {
   text-align: center;
 }
 
-.join__form{
+.join__form {
   display: grid;
   row-gap: .75rem;
   margin-top: 3vh;
 }
 
-.join__input{
+.join__input {
   width: 100%;
   background-color: var(--body-color);
   padding: 1.25rem 1.5rem;
@@ -955,27 +957,165 @@ article.products__card {
   color: var(--text-color);
 }
 
-.join__input::placeholder{
+.join__input::placeholder {
   font-family: var(--second-font);
 }
 
-.join__button{
+.join__button {
   padding-block: 1.1rem;
   cursor: pointer;
 }
 
 
 /*=============== FOOTER ===============*/
+.footer {
+  padding-block: 3rem 2.5rem;
+}
 
+.footer__content {
+  row-gap: 3rem;
+}
+
+.footer__logo {
+  display: inline-block;
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+  font-family: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .75rem;
+  letter-spacing: 1px;
+}
+
+.footer__logo span {
+  background: var(--third-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform .4s;
+}
+
+
+.footer__data {
+  grid-template-columns: repeat(2, max-content);
+  gap: 2.5rem 4rem;
+}
+
+.footer__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 1rem;
+}
+
+.footer__links {
+  display: grid;
+  row-gap: .75rem;
+}
+
+.footer__link {
+  color: var(--text-color);
+  transition: color .4s;
+}
+
+.footer__link:hover {
+  color: var(--title-color);
+}
+
+.footer__social,
+.footer__group,
+.footer__terms {
+  display: flex;
+
+}
+
+.footer__social {
+  column-gap: 1.25rem;
+}
+
+.footer__social-link {
+  font-size: 1.25rem;
+  background: var(--third-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform .4s;
+}
+
+.footer__link-title:hover {
+  transform: translate(-.25rem);
+}
+
+.footer__group {
+  margin-top: 4rem;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.footer__terms a {
+  font-size: var(--small-font-size);
+  text-align: center;
+  margin-left: 10px;
+}
+
+.footer__header,
+.footer__data {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* active link */
+
+.active-link {
+  background: var(--third-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 2em;
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 75%);
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 65%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 55%);
+}
+
 
 
 /*=============== SCROLL UP ===============*/
 
+.scroll-button {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background: var(--container-color);
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  border-radius: .25rem;
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, .1);
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s;
+}
+
+.scroll-button:hover {
+  transform: translateY(-.25rem);
+}
 
 /* Show Scroll Up */
-
+.show-scroll {
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
