@@ -256,6 +256,10 @@ img {
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
 
+.bg-header:is(.nav__logo, .nav__toggle, .change-theme) {
+  color: var(--title-color);
+}
+
 .bg-text {
   color: black !important;
 }
@@ -1115,6 +1119,29 @@ article.products__card {
 /* Show Scroll Up */
 .show-scroll {
   bottom: 3rem;
+}
+
+/* theme light dark */
+
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--white-color);
+  transition: color .4s;
+  cursor: pointer;
+}
+
+.body.dark-theme {
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 70%);
+  --white-color: #fff;
+  --body-color: hsl(0, 0%, 16%);
+  --container-color: hsl(0, 0%, 15%);
 }
 
 /*=============== BREAKPOINTS ===============*/
