@@ -119,11 +119,40 @@ img {
 
 /*========== Variables Dark theme ==========*/
 
+body.dark-theme{
+  --title-color: hsl(0, 0%, 92%);
+  --text-color: hsl(0, 0%, 70%);
+  --white-color: #fff;
+  --body-color: hsl(0, 0%, 12%);
+  --container-color: hsl(0, 0%, 15%);
+}
+
 
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
+
+.dark-theme :is(.bg-header, .nav__menu){
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .2);
+}
+
+.dark-theme :is(.home__shadow){
+  background: hsla(0, 0%, 100%, 0.6);
+}
+.dark-theme :is(.choose__shadow){
+  background: hsla(0, 0%, 100%, 0.6);
+}
+.dark-theme :is(.features__shadow){
+  background: hsla(0, 0%, 100%, 0.6);
+}
+.dark-theme :is(.join__shadow){
+  background: hsla(0, 0%, 100%, 0.6);
+}
+.dark-theme :is(.feat-card){
+  background: rgb(236,156,6);
+background: linear-gradient(90deg, rgba(236, 86, 6, 0.932) 0%, rgba(248, 248, 248, 0.773) 86%);
+}
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -256,16 +285,10 @@ img {
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
 
-.bg-header:is(.nav__logo, .nav__toggle, .change-theme) {
-  color: var(--title-color);
-}
 
 .bg-text {
   color: black !important;
 }
-
-
-
 
 
 
@@ -655,7 +678,7 @@ img.choose__img {
 
 p.choose__description {
   padding: 25px;
-  margin-top: 3vh;
+  margin-top: 0vh;
   margin-bottom: 3vh;
 
 }
@@ -773,7 +796,7 @@ p.choose__description {
 
 .feat-card {
   background: rgb(240, 240, 240);
-  background: linear-gradient(90deg, rgba(240, 240, 240, 0.9778339077967294) 42%, rgba(255, 120, 2, 0.05857924941163628) 100%);
+  background: linear-gradient(90deg, rgba(240, 240, 240, 0.9778339077967294) 42%, rgba(255, 95, 2, 0.126) 100%);
   padding: 2rem 1.5rem;
   text-align: center;
   transition: box-shadow .4s;
@@ -920,10 +943,10 @@ article.products__card {
 
 .join__shadow {
   position: relative;
-  width: 210px;
+  width: 220px;
   height: 30px;
   background: hsla(31, 80%, 59%, 0.6);
-  left: 0vh;
+  left: 10px;
   filter: blur(10px);
   z-index: -1;
   top: -19px;
@@ -1144,11 +1167,44 @@ article.products__card {
   --container-color: hsl(0, 0%, 15%);
 }
 
+.faq-pic{
+  margin-bottom: 5vh;
+}
+
+.choose__content {
+  margin-bottom: -3vh;
+}
+
+.ceo-pic{
+
+  height: 180px;
+  background-color: rgba(205, 96, 45, 0.832);
+  border-radius: 60%;
+}
+
+section#features {
+  margin-top: -3vh;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 420px) {
+  .container{
+    margin-inline: 1rem;
+  }
 
+  .ceo-pic {
+    margin-top: 6vh;
+}
+
+  
+}
 
 /* For medium devices */
-
+@media screen and (max-width: 576px) {
+  .ceo-pic {
+    margin-top: 6vh;
+}
+}
 
 /* For large devices */
