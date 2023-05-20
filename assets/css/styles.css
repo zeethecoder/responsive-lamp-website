@@ -47,7 +47,7 @@
 }
 
 /*========== Responsive typography ==========*/
-@media screen and (min-width: 1152px) {
+/* @media screen and (min-width: 1152px) {
   :root {
     --bigger-font-size: 4rem;
     --big-font-size: 3.5rem;
@@ -59,7 +59,7 @@
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
   }
-}
+} */
 
 /*=============== BASE ===============*/
 * {
@@ -1208,7 +1208,7 @@ section#features {
 }
 .choose__faq{
   position: relative;
-  left: 4vh;
+  left: 2vh;
   width: 90%;
 }
 }
@@ -1218,11 +1218,18 @@ section#features {
 @media screen and (min-width: 580px) {
   .choose__faq{
     position: relative;
-    left: 4vh;
+    left: 8vh;
     width: 90%;
   }
 }
 
+@media screen and (min-width: 1336px) {
+
+p.choose__description{
+  margin-top: 3vh;
+  
+}
+}
 @media screen and (max-width: 1336px) {
 
 p.choose__description{
@@ -1291,6 +1298,37 @@ p.choose__description{
     column-gap: 4rem;
   }
 
+  p.choose__faq-description {
+    width: 80%;
+}
+
+  .products__content {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+  .products__data {
+    margin-bottom: 3vh;
+}
+
+  .choose__faq {
+    position: relative;
+    left: 11vh;
+}
+
+  section#features {
+    margin-top: 0vh;
+}
+
+  .choose__blob{
+    position: relative;
+    top: 2vh;
+  }
+
+  .choose__content {
+    margin-bottom: 5vh;
+  }
+
   .nav__toggle,
   .nav__close{
     display: none;
@@ -1299,4 +1337,72 @@ p.choose__description{
     flex-direction: row;
     column-gap: 4rem;
   }
+  .home__bg {
+    height: 115%;
+}
+.ri-expand-left-line, .ri-expand-right-line {
+  font-size: 25px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 3rem;
+  height: 3rem;
+  bottom: 5px;
+}
+
+.swiper-button-next {
+  right: calc(50% - 5rem);
+}
+
+.popular__data {
+  margin-top: 3vh;
+
+
+}
+
+@media screen and (min-width: 1150px){
+  .nav{
+    column-gap: 4rem;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    bottom: -4vh;
+}
+
+  .choose__faq {
+    position: relative;
+    left: 12vh;
+    
+  }
+  img.home-picture {
+    max-width: 80%;
+    margin-left: 3vh;
+}
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .nav__menu{
+    margin-left: auto;
+  }
+  .container{
+    margin: 0 auto;
+  }
+
+  .popular__content{
+    width: 31%;
+  }
+
+  .swiper{
+    overflow: revert;
+  }
+  
+}
+
+@media screen and (min-width 1280px) {
+  
 }
