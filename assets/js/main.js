@@ -118,6 +118,19 @@ const scrollUp = () => {
 }
 window.addEventListener('scroll', scrollUp);
 
+ const scrollBtn = document.querySelector('.scroll-button');
+
+    topFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+
+
+ scrollBtn.addEventListener('click', topFunction);
+
+
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 // Bug Needs to be fixed classList 
 const sections = document.querySelectorAll('.section')

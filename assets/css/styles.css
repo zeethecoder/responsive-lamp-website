@@ -134,7 +134,7 @@ body.dark-theme{
 ==========*/
 
 .dark-theme :is(.bg-header, .nav__menu){
-  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .2);
+  /* box-shadow: 0 2px 16px hsla(0, 0%, 0%, .2); */
 }
 
 .dark-theme :is(.home__shadow){
@@ -1008,6 +1008,12 @@ article.products__card {
 .footer {
   padding-block: 3rem 2.5rem;
 }
+
+a.terms-text {
+  color: blanchedalmond;
+}
+
+
 
 .footer__content {
   row-gap: 3rem;
