@@ -126,7 +126,6 @@ window.addEventListener('scroll', scrollUp);
     }
 
 
-
  scrollBtn.addEventListener('click', topFunction);
 
 
