@@ -611,8 +611,9 @@ img.choose__img {
 
 
 .choose__content {
-  margin-top: 5vh;
+  margin-top: 2vh;
   padding: 32px;
+  padding-bottom: 10px;
 }
 
 .choose__shadow {
@@ -688,7 +689,7 @@ p.choose__description {
 }
 
 .choose__faq {
-  margin-top: 10px;
+  margin-top: -3vh;
 }
 
 .choose__faq-description {
@@ -827,7 +828,7 @@ p.choose__description {
 .products__card {
   position: relative;
   width: 202px;
-  height: 328px;
+  height: 340px;
   background-color: var(--container-color);
   border-radius: 9rem 9rem 0 0;
   padding: .75rem .75rem 1rem;
@@ -847,12 +848,21 @@ p.products__description {
 
 h3.products__price {
   position: relative;
-  top: 1vh;
+    top: 6px;
 }
+
+h3.products__name {
+  font-size: 20px;
+}
+span.products__subtitle {
+  font-size: 17px;
+}
+
 
 .products__content {
   margin-top: 5vh;
   margin: 0 auto;
+  display: grid;
 }
 
 article.products__card {
@@ -1196,15 +1206,97 @@ section#features {
   .ceo-pic {
     margin-top: 6vh;
 }
-
-  
+.choose__faq{
+  position: relative;
+  left: 4vh;
+  width: 90%;
 }
+}
+  
 
 /* For medium devices */
-@media screen and (max-width: 576px) {
-  .ceo-pic {
-    margin-top: 6vh;
+@media screen and (min-width: 580px) {
+  .choose__faq{
+    position: relative;
+    left: 4vh;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1336px) {
+
+p.choose__description{
+  margin-top: 3vh;
+  
 }
 }
 
 /* For large devices */
+@media screen and (min-width: 750px) {
+  p.choose__description {
+    padding: 0px;
+    width: 100%
+}
+  .home__bg {
+    height: 111%;
+}
+  .home__container,
+  .choose__container,
+  .features__container,
+  .join__bg{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .flex-faq {
+    display: contents;
+}
+
+  .home__image{
+    order: -1;
+  }
+
+  .features__container{
+    margin: 0 auto;
+    margin-right: 2vh;
+    margin-top: 3vh;
+}
+
+.join__container{
+  width: 90%;
+  margin: 0 auto;
+}
+.footer__data{
+  grid-template-columns: repeat(4, max-content);
+}
+.choose__description{
+  width: 60%;
+  margin: 0 auto;
+
+}
+.features__info{
+  margin-top: 2vh;
+}
+.products__content{
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.footer__group {
+  margin-top: 1rem;
+}
+}
+
+@media screen and (min-width: 1024px){
+  .nav{
+    column-gap: 4rem;
+  }
+
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+}
