@@ -171,3 +171,15 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true // animations repeat
+})
+
+sr.reveal(`.products__data,.popular__container, .home__content, .popular_content, products__container, join__bg`)
+sr.reveal(`.join__image, .products__content, .home__image`, {origin: 'bottom'})
+sr.reveal('.home-pic, choose__image, .features__image', {origin: 'left'})
+sr.reveal(`.join__content, .choose__faq, .choose__shadow, .choose__blob, .choose__content, .features__content`, {origin: 'right'})

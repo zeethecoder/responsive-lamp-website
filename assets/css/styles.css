@@ -749,10 +749,10 @@ p.choose__description {
   width: 210px;
   height: 30px;
   background: hsla(31, 80%, 59%, 0.6);
-  left: 0vh;
+  left: 3px;
   filter: blur(10px);
   z-index: -1;
-  top: -19px;
+  top: -12px;
 }
 
 .features__img {
@@ -956,7 +956,7 @@ article.products__card {
   width: 220px;
   height: 30px;
   background: hsla(31, 80%, 59%, 0.6);
-  left: 10px;
+  left: 0px;
   filter: blur(10px);
   z-index: -1;
   top: -19px;
@@ -1111,7 +1111,7 @@ article.products__card {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: 2em;
+  width: 1em;
   border-radius: .5rem;
   background-color: hsl(0, 0%, 75%);
 }
@@ -1203,6 +1203,7 @@ section#features {
     margin-inline: 1rem;
   }
 
+
   .ceo-pic {
     margin-top: 6vh;
 }
@@ -1226,14 +1227,20 @@ section#features {
 @media screen and (min-width: 1336px) {
 
 p.choose__description{
-  margin-top: 3vh;
+  margin-top: 5vh;
   
+}
+
+.choose__blob,
+.choose__content{
+  position: relative;
+  top: 45px;
 }
 }
 @media screen and (max-width: 1336px) {
 
 p.choose__description{
-  margin-top: 3vh;
+  margin-top: 4vh;
   
 }
 }
@@ -1243,6 +1250,14 @@ p.choose__description{
   p.choose__description {
     padding: 0px;
     width: 100%
+}
+
+.popular__content.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+  width: 63%;
+}
+
+.swiper {
+  overflow: revert;
 }
   .home__bg {
     height: 111%;
@@ -1297,6 +1312,10 @@ p.choose__description{
   .nav{
     column-gap: 4rem;
   }
+  .choose__shadow {
+    top: 7px;
+}
+
 
   p.choose__faq-description {
     width: 80%;
@@ -1359,6 +1378,7 @@ p.choose__description{
 
 
 }
+}
 
 @media screen and (min-width: 1150px){
   .nav{
@@ -1370,12 +1390,16 @@ p.choose__description{
 
   .choose__faq {
     position: relative;
-    left: 12vh;
+    left: 14.5vh;
     
   }
+  .features__content {
+    width: 90%;
+    margin-left: 3vh;
+}
   img.home-picture {
     max-width: 80%;
-    margin-left: 3vh;
+    margin-left: 6vh;
 }
   .nav__toggle,
   .nav__close{
@@ -1400,9 +1424,4 @@ p.choose__description{
   .swiper{
     overflow: revert;
   }
-  
-}
-
-@media screen and (min-width 1280px) {
-  
 }
